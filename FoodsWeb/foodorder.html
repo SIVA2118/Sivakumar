@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Students pizza</title>
+
+<link type="text/css" rel="stylesheet" href="foodorder.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript" src="foodorder.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" alt="Students pizza" width="200px" height="100px"/>
+<h1>Students pizza & Fast Food</h1>
+</header>
+
+<main>
+
+<form id="order_form" name="order_form" action="checkout.html" method="get"></form>>
+
+<section id="menu">
+
+<h2>Menu</h2>
+
+<p>Click an item to add it to your order.</p>
+
+<ul>
+
+<li><a href="#"><img id="food1.png" src="food1.png"alt="Grilled Chicken" data-price="300" width="150" height="100"/></a></li>
+
+<li><a href="#"><img id="food2.png" src="food2.png" alt="Tantoori Chicken" data-price="250" width="150" height="100"></a></li>
+
+<li><a href="#"><img id="food8.png" src="food8.png" alt="Turkey Burger" data-price="150" width="150" height="100"/></a></li>
+
+<li><a href="#"><img id="food5.png" src="food5.png" alt="Biriyani" data-price="100" width="150" height="100"/></a></li>
+
+<li><a href="#"><img id="food3.png" src="food3.png" alt="Coconut Grilled Chicken" data-price="110" width="150" height="100"/></a></li>
+
+<li><a href="#"><img id="pizza.png" src="pizza.png" alt="Mixed pizza" data-price="350" width="150" height="100"/></a></li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Your Order</h2>
+  
+  <textarea id="order_textarea" rows="8" cols="60" readonly></textarea>
+  <div id="total">Total: $0.00</div>
+  <button id="place_order">PAY NOW</button>
+  <button id="clear_order">CLEAR ORDER</button>
+</section>
+
+</form>
+
+</main>
+
+</body>
+
+</html>

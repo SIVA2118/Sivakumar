@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color:whitesmoke;
+    width: 300px;
+    margin: 50px;
+    border: 10px solid black;
+    border-style: 5px double;
+    border-radius: 25px;
+    padding: 0 5em 3em;
+    margin-left: 400px;
+    margin-bottom: 350px;
+}
+h1 { 
+    font-size: 150%;
+    margin-bottom: .5em;
+    color: blue;
+    text-align: center;
+}
+button{
+color: #fff;
+padding: 8px 22px;
+width: 150px;
+border-radius: 6px;
+background: #7d2ae8;
+transition: all 0.2s ease;
+margin-top: 10%;
+margin-left: 25%;
+}
+button:active{
+    transform:scale(0.96);
+}
+</style>
+<body>
+    <form id="order_form" name="order_form" action="PayOrder.html" method="get"></form>
+    <h1>Scan Hear</h1>
+    <div class="gpay">
+<img src="GooglePay_QR.png" alt="wait for faw second" width="100%" height="50%">
+    </div>
+    <div class="pay">
+        <a href="OrderSuccess.html"><button id="payn"> submitte</button></a>
+    </div>
+</body>
+<script>
+     $("#payn").click(function() {
+    window.open("file:///C:/Users/Lenovo/Desktop/FoodsWeb/OrderSuccess.html");
+  });
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="foods.css">
+    <title>FoodsWeb</title>
+</head>
+<body>
+    <div class="container">
+        <div class="path">
+        </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+<div class="foods">
+ <li><img src="food1.png" onclick="big('food1.png');"></li>
+ <li><img src="food2.png" onclick="big('food2.png');"></li>
+ <li><img src="food8.png" onclick="big('food8.png');"></li>
+ <li><img src="food5.png" onclick="big('food5.png');"></li>
+</div>
+<div class="big-foods">
+    <img src="food5.png"  class="big">
+</div>
+<div class="content">
+    <p>Yummy Tummy</p>
+    <h1>Let's come and<br>&nbsp;&nbsp;feel the tast</h1>
+    <h5>For food lover</h5><br>
+   <a href="foodorder.html"><button>BUY NOW</button></div></a>
+</div>
+</div>
+</body>
+<script>
+    function big(img){
+        document.querySelector('.big').src=img;
+    }
+
+</script>
+</html>
